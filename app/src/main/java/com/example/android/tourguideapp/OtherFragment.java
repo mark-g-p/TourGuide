@@ -2,12 +2,12 @@ package com.example.android.tourguideapp;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 
 import com.example.android.tourguideapp.databinding.AttractionListBinding;
 
@@ -20,7 +20,7 @@ public class OtherFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
@@ -30,19 +30,19 @@ public class OtherFragment extends Fragment {
         ArrayList<Attraction> attractions = new ArrayList<>();
 
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
         attractions.add(new Attraction(getString(R.string.passage),
-                getString(R.string.passage_desc), R.drawable.ic_launcher_background));
+                getString(R.string.passage_desc), R.drawable.placeholder));
 
 
         AttractionAdapter adapter =
@@ -53,7 +53,7 @@ public class OtherFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //                resize listitem when clicked
                 ViewGroup.LayoutParams params = view.getLayoutParams();
-                int wrapContent = ViewGroup.LayoutParams.WRAP_CONTENT;
+                int wrapContent = ViewGroup.LayoutParams.MATCH_PARENT;
                 int normalHeight = getResources().getDimensionPixelSize(R.dimen.list_item_height);
                 params.height = params.height == normalHeight ? wrapContent : normalHeight;
                 view.setLayoutParams(params);
