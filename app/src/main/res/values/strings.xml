@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Wrocław</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_other">Other</string>
+    <string name="nav_museums">Museums</string>
+    <string name="nav_viewpoints">Viewpoints</string>
+    <string name="nav_bridges">Bridges</string>
+    <string-array name="tabs">
+        <item>Bridges</item>
+        <item>Viewpoints</item>
+        <item>Museums</item>
+        <item>Other</item>
+    </string-array>
+    <string name="grunwaldzki_bridge_desc">Grunwaldzki Bridge (Most Grunwaldzki)
+        is the most recognisable bridge in Wrocław. It was constructed in the
+        years 1908 – 1910 to the design of Richard Plüddemann, the then city
+        councillor for building.</string>
+    <string name="grunwaldzki_bridge">Grunwaldzki Bridge</string>
+    <string name="panorama_desc">The painting present the Battle of Racławice in April 1794, in which Poles won over Russians. The monumental picture is 114m long and 15m high and was painted on the 100th anniversary of the victory.</string>
+    <string name="panorama">Panorama of the Battle of Racławice</string>
+    <string name="penitent_bridge">The Penitent Bridge</string>
+    <string name="penitent_bridge_desc">The Penitent Bridge is a footbridge between the two towers of Mary Magdalene church at the height of 45 metres.</string>
+    <string name="passage">Passage by Jerzy Kalina</string>
+    <string name="passage_desc">The sculpture presents people who go down, under the pavement and emerge from it. Its original was the installation of Kalina from 1977 “Passage” (that is why the sculpture is also known by this name). The Sculpture of Anonymous Pedestrian (Pomnik Anonimowego Przechodnia) was showed for the first time in 2005, the author did not change the project, the people wear the clothes from the 70s.</string>
+    <string name="coat_of_arms">Coat of arms</string>
+    <string name="photo">Photo</string>
+</resources>
